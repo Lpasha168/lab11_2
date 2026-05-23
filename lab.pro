@@ -18,5 +18,4 @@ HEADERS += mainwindow.h \
            sorfilter.h \
            histogramwidget.h
 
-# Опционально: раскомментируйте при установленном Qt Charts
-# QT += charts
+
