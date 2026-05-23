@@ -67,7 +67,7 @@ void HistogramWidget::drawAxisHistogram(QPainter& painter,
     const int maxCount = *std::max_element(hist.begin(), hist.end());
     const QRect plot = area.adjusted(28, 22, -8, -24);
 
-    // Рамка без заливки (иначе после X остаётся синий brush и Y/Z заливаются целиком).
+    
     painter.setBrush(Qt::NoBrush);
     painter.setPen(QColor(120, 120, 120));
     painter.drawRect(plot);
