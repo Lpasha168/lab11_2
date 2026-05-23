@@ -66,7 +66,6 @@ std::vector<double> computeMeanDistances(const std::vector<Point>& points,
         return meanDist;
     }
 
-    // Пул потоков: не создаём по async на каждую точку (переполнение стека Windows).
     const unsigned int workers = workerCount();
     std::vector<std::future<void>> tasks;
     tasks.reserve(workers);
